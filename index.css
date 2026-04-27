@@ -1,16 +1,47 @@
-p, h1 {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
-h1 {
-    display: flex;
-    justify-content: center;
+
+/* Bloc titre : image à gauche, texte centré verticalement */
+.titre {
+  display: flex;
+  align-items: center;       /* centre le texte verticalement */
+  justify-content: flex-start; /* image à gauche, texte à droite */
+  gap: 20px;                 /* espace entre image et texte */
+  margin-left: 2%;
+  gap: 25%;
+}
+
+.titre img {
+  width: 150px;              /* taille de l’image */
+}
+
+p {
+    font-size: 125%;
 }
 #p1 {
+        display: flex;
+    justify-content: start;
+    margin-left: 2%;
+}
+#p2 {
+        display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+#p3 {
+    display: flex;
+    justify-content: start;
+    margin-left: 2%;
+}
+#p4 {
     display: flex;
     justify-content: end;
     margin-right: 2%;
 }
-#p2 {
+#p5 {
     display: flex;
     justify-content: start;
     margin-left: 2%;
