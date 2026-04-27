@@ -1,66 +1,109 @@
+/* 🌐 Mise en page PC : alignement précis des paragraphes */
 body {
   background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
-/* Bloc titre : image à gauche, texte centré verticalement */
+/* Bloc titre */
 .titre {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 25%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .titre img {
   width: 150px;
 }
 
+/* Paragraphe général */
 p {
   font-size: 125%;
+  line-height: 1.6;
+  margin: 20px 5%;
+  max-width: 90%;
 }
 
+/* 🧭 Paragraphes à gauche : alignés au bord gauche */
 #p1, #p3, #p5 {
   display: flex;
-  justify-content: start;
-  margin-left: 2%;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+/* 🧭 Paragraphes à droite : dernier mot aligné sur le bord droit */
 #p2, #p4 {
   display: flex;
-  justify-content: end;
-  margin-right: 2%;
+  justify-content: flex-end;
+  text-align: right;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
 
-/* ✅ Adaptation pour téléphone */
+/* Pour que le texte s’aligne parfaitement à droite */
+#p2 p, #p4 p {
+  text-align: right;
+  width: 100%;
+}
+p + p {
+  margin-top: 25px;
+}
 @media (max-width: 600px) {
   body {
-    background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150)); /* garde ton fond */
+    background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
     font-size: 16px;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
+    line-height: 1.7;
   }
 
   .titre {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-left: 0;
+    margin: 0;
   }
 
   .titre img {
-    width: 100px;
+    width: 110px;
   }
 
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* ✨ Paragraphe fluide et agréable à lire */
   p {
     font-size: 110%;
-    margin: 10px 0;
     text-align: justify;
+    margin: 15px 10%;
+    line-height: 1.8;
   }
 
+  /* 🔧 Tous les paragraphes alignés à gauche */
   #p1, #p2, #p3, #p4, #p5 {
-    justify-content: center;
-    margin: 0;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* 🌟 Effet de respiration entre les blocs */
+  p + p {
+    margin-top: 18px;
+  }
+
+  /* 🩵 Optionnel : un léger effet de titre pour les mots importants */
+  strong {
+    color: #ffd700;
+    font-weight: bold;
   }
 }
