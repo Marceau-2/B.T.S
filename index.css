@@ -1,0 +1,17 @@
+p, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+#p1 {
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+#p2 {
+    display: flex;
+    justify-content: start;
+    margin-left: 2%;
+}
