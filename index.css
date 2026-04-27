@@ -1,21 +1,56 @@
-/* Adaptation pour téléphone */
-@media (max-width: 600px) {
+body {
+  background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 
+/* Bloc titre : image à gauche, texte centré verticalement */
+.titre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25%;
+  margin-left: 2%;
+}
+
+.titre img {
+  width: 150px;
+}
+
+p {
+  font-size: 125%;
+}
+
+#p1, #p3, #p5 {
+  display: flex;
+  justify-content: start;
+  margin-left: 2%;
+}
+
+#p2, #p4 {
+  display: flex;
+  justify-content: end;
+  margin-right: 2%;
+}
+
+/* ✅ Adaptation pour téléphone */
+@media (max-width: 600px) {
   body {
+    background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150)); /* garde ton fond */
     font-size: 16px;
     padding: 10px;
     text-align: center;
   }
 
   .titre {
-    flex-direction: column; /* image au-dessus du texte */
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     margin-left: 0;
   }
 
   .titre img {
-    width: 100px; /* réduit la taille du logo */
+    width: 100px;
   }
 
   p {
