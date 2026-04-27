@@ -75,6 +75,7 @@
   }
 
   .titre {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -82,7 +83,9 @@
   }
 
   .titre img {
+    display: flex;
     width: 110px;
+    justify-content: center;
   }
 
   h1 {
@@ -94,6 +97,9 @@
 
   /* Centrage propre et harmonieux */
   p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     /* Centre chaque ligne */
     margin: 15px auto;
@@ -111,7 +117,9 @@
   #p3,
   #p4,
   #p5 {
+    display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
   }
 }
@@ -119,10 +127,4 @@
 /* 🌟 Effet de respiration entre les blocs */
 p+p {
   margin-top: 18px;
-}
-
-/* 🩵 Optionnel : un léger effet de titre pour les mots importants */
-strong {
-  color: #ffd700;
-  font-weight: bold;
 }
