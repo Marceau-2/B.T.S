@@ -1,48 +1,31 @@
-body {
-  background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
+/* Adaptation pour téléphone */
+@media (max-width: 600px) {
 
-/* Bloc titre : image à gauche, texte centré verticalement */
-.titre {
-  display: flex;
-  align-items: center;       /* centre le texte verticalement */
-  justify-content: flex-start; /* image à gauche, texte à droite */
-  gap: 20px;                 /* espace entre image et texte */
-  margin-left: 2%;
-  gap: 25%;
-}
+  body {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
 
-.titre img {
-  width: 150px;              /* taille de l’image */
-}
+  .titre {
+    flex-direction: column; /* image au-dessus du texte */
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
 
-p {
-    font-size: 125%;
-}
-#p1 {
-        display: flex;
-    justify-content: start;
-    margin-left: 2%;
-}
-#p2 {
-        display: flex;
-    justify-content: end;
-    margin-right: 2%;
-}
-#p3 {
-    display: flex;
-    justify-content: start;
-    margin-left: 2%;
-}
-#p4 {
-    display: flex;
-    justify-content: end;
-    margin-right: 2%;
-}
-#p5 {
-    display: flex;
-    justify-content: start;
-    margin-left: 2%;
+  .titre img {
+    width: 100px; /* réduit la taille du logo */
+  }
+
+  p {
+    font-size: 110%;
+    margin: 10px 0;
+    text-align: justify;
+  }
+
+  #p1, #p2, #p3, #p4, #p5 {
+    justify-content: center;
+    margin: 0;
+  }
 }
