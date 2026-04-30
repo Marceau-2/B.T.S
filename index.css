@@ -19,18 +19,53 @@
   }
 
   .titre img {
-    width: 150px;
+    width: 15%;
   }
+
 
   /* Paragraphe général */
   p {
     font-size: 125%;
     line-height: 1.6;
-    margin: 20px 5%;
+    margin: 1%;
     max-width: 90%;
   }
 
-  /* 🧭 Paragraphes à gauche : alignés au bord gauche */
+  img {
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+  }
+
+  #dolorean_model {
+    width: 20%;
+  }
+
+  #modele3D {
+    width: 25%;
+  }
+
+  #engrenage {
+    width: 12%;
+  }
+
+  #roue {
+    width: 12%;
+  }
+
+  #dolorean {
+    width: 20%;
+  }
+
+  .gauche {
+    margin-left: 5%;
+  }
+
+  .droite {
+    margin-right: 5%;
+  }
+
   #p1,
   #p3,
   #p5 {
@@ -41,22 +76,14 @@
     margin-right: 5%;
   }
 
-  /* 🧭 Paragraphes à droite : dernier mot aligné sur le bord droit */
   #p2,
   #p4 {
     display: flex;
     justify-content: flex-end;
-    text-align: right;
+    text-align: left;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-  }
-
-  /* Pour que le texte s’aligne parfaitement à droite */
-  #p2 p,
-  #p4 p {
-    text-align: right;
-    width: 100%;
   }
 
   p+p {
@@ -69,7 +96,7 @@
     background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 90%;
     padding: 20px;
     line-height: 1.7;
   }
@@ -84,7 +111,7 @@
 
   .titre img {
     display: flex;
-    width: 110px;
+    width: 130px;
     justify-content: center;
   }
 
@@ -95,36 +122,62 @@
     letter-spacing: 1px;
   }
 
-  /* Centrage propre et harmonieux */
-  p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* Centre chaque ligne */
-    margin: 15px auto;
-    /* Centre le paragraphe lui-même */
-    width: 85%;
-    /* Largeur idéale pour mobile */
-    line-height: 1.8;
-    /* Espacement agréable */
-    font-size: 110%;
+  img {
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
   }
 
-  /* Supprime les alignements gauche/droite */
+  #dolorean_model {
+    width: 25%;
+  }
+
+  #modele3D {
+    width: 25%;
+  }
+
+  #engrenage {
+    width: 20%;
+  }
+
+  #roue {
+    width: 20%;
+  }
+
+  #dolorean {
+    width: 30%;
+  }
+
+  .gauche {
+    margin-left: 5%;
+  }
+
+  .droite {
+    margin-right: 5%;
+  }
+
   #p1,
-  #p2,
   #p3,
-  #p4,
   #p5 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #p2,
+  #p4 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
   }
 }
 
-/* 🌟 Effet de respiration entre les blocs */
 p+p {
   margin-top: 18px;
 }
