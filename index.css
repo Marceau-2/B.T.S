@@ -129,26 +129,27 @@
     border-top-right-radius: 25%;
   }
 
-  #dolorean_model {
-    width: 30%;
+#dolorean_model {
+    width: 100px;
+    height: 60px
   }
 
   #modele3D {
-    width: 35%;
+    width: 100px;
   }
 
   #engrenage {
-    width: 25%;
+    width: 60px;
+    height:60px;
   }
 
   #roue {
-    width: 25%;
+    width: 30%;
   }
 
   #dolorean {
-    width: 40%;
+    width: 150px;
   }
-
   .gauche {
     margin-left: 5%;
   }
