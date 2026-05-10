@@ -7,36 +7,82 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="titre">
-      <img src="bts.png" alt="Logo de Back To Speed" />
-      <h1>Back To Speed</h1>
-      <img src="courseencours.png" alt="Course en cours" />
-    </div>
-    <p id="p1">
-      Notre équipe s'est basé sur <br />
-      la delorean de retour vers le futur.
-      <img src="dolorean_model.png" alt="dolorean modéle" class="gauche" id="dolorean_model"/>
-    </p>
-    <p id="p2">
-      <img src="modele3D.png" alt="modele3D" class="droite" id="modele3D"/>
-      Conception de notre carroserie <br />
-      grâce a solideworks
-    </p>
-    <p id="p3">
-      Notre innovation technologique <br />pour se projet son des engrenages
-      <br />basé a la sortie du moteur grâce aux quelle <br />on augmente la
-      vitesse de notre voiture
-      <img src="engrenage.png" alt="engrenage" class="gauche" id="engrenage">
-    </p>
-    <p id="p4">
-      <img src="roue.png"alt="roue avant" class="droite" id="roue">
-      Les roue avant sont complétement en PLA, <br />et les gentes des roue
-      arriére <br />
-      sont en PLA et le pneus et en silicone
-    </p>
-    <p id="p5">
-      Notre voiture a été créé en PLA entiérement
-      <img src="dolorean.png" alt="dolorean réaliser" class="gauche" id="dolorean">
-    </p>
+    <nav>
+        <img src="bts.png" alt="Logo de Back To Speed" class="logo" />
+        <img src="courseencours.png" alt="Logo de course en cours" class="logo" />
+        <div class="onglets">
+            <a href="#home">Accueil</a>
+            <a href="#main">Présentation</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header id ="home">
+        <h1>Back To Speed</h1>
+        <h4>COURSE EN COURS</h4>
+        <button>Parcourir</button>
+    </header>
+    <section class="main" id="main">
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                    <h2>Présentation</h2>
+                    <p>
+                        Nous sommes une équipe de passionnés qui a créé Back To Speed, 
+                        une voiture de course inspirée du modèle légendaire de la dolorean de la franchise 
+                        "Retour vers le futur".
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="modele3D.png" alt="dolorean modéle"/>
+                </div>
+            </div>
+        </div> 
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                    <h2>Conception</h2>
+                    <p>
+                        Notre véhicule a été conçu entiérement en PLA, avec les pneus en silicone.
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="dolorean.png" alt="Dolorean"/>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                    <h2>Sponsor</h2>
+                    <p>
+                         Avec la participation de nos sponsors, 
+                         nous avons pu financer la construction de notre voiture et 
+                         participer à cette compétition de course.   
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="" alt=""/>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <h1>Avec la participation de :</h1>
+        <div class="equipe">
+            <div class="eleve">
+                <h3>Marceau DOUGUEDROIT</h3>
+                <p>Développeur HTML</p>
+            </div>
+            <div class="eleve">
+                <h3>Machin</h3>
+                <p>Ingenieur</p>
+            </div>
+            <div class="eleve">
+                <h3>Matthias BOGAERT</h3>
+                <p>Devéloppeur CSS</p>
+            </div>
+        </div>
+        <p id = "contact">Contact : 00 00 00 00 00 | © 2026 Back To Speed. Tous droits réservés.</p>
+    </footer>
   </body>
 </html>
