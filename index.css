@@ -1,184 +1,165 @@
-@media (min-width: 601px) {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,600&display=swap');
 
-  /* 🌐 Mise en page PC : alignement précis des paragraphes */
-  body {
-    background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Bloc titre */
-  .titre {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 25%;
-    margin-left: 5%;
-  }
-
-  .titre img {
-    width: 15%;
-  }
-
-
-  /* Paragraphe général */
-  p {
-    font-size: 150%;
-    line-height: 1.6;
-    margin: 1%;
-    max-width: 90%;
-  }
-
-  img {
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-  }
-
-  #dolorean_model {
-    width: 20%;
-  }
-
-  #modele3D {
-    width: 25%;
-  }
-
-  #engrenage {
-    width: 12%;
-  }
-
-  #roue {
-    width: 12%;
-  }
-
-  #dolorean {
-    width: 20%;
-  }
-
-  .gauche {
-    margin-left: 5%;
-  }
-
-  .droite {
-    margin-right: 5%;
-  }
-
-  #p1,
-  #p3,
-  #p5 {
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  #p2,
-  #p4 {
-    display: flex;
-    justify-content: flex-end;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-
-  p+p {
-    margin-top: 25px;
-  }
+html{
+    scroll-behavior: smooth;
 }
 
-@media (max-width: 600px) {
-  body {
-    background: linear-gradient(rgb(0, 0, 102), rgb(0, 70, 150));
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 60%;
-    padding: 20px;
-    line-height: 1.7;
-  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
 
-  .titre {
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+
+nav .logo{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: large;
+}
+
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .titre img {
-    display: flex;
-    width: 130px;
-    justify-content: center;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
-
-  img {
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-  }
-
-#dolorean_model {
-    width: 100px;
-    height: 60px
-  }
-
-  #modele3D {
-    width: 100px;
-  }
-
-  #engrenage {
-    width: 60px;
-    height:60px;
-  }
-
-  #roue {
-    width: 30%;
-  }
-
-  #dolorean {
-    width: 150px;
-  }
-  .gauche {
-    margin-left: 5%;
-  }
-
-  .droite {
-    margin-right: 5%;
-  }
-
-  #p1,
-  #p3,
-  #p5 {
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  #p2,
-  #p4 {
-    display: flex;
-    justify-content: flex-end;
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
+    background: url("61l7IAGdScL._AC_UF1000,1000_QL80_.jpg");
+    background-size: cover;
+    background-position: 60% 40%;
+    color: #000000;
+    padding: 40px;
 }
 
-p+p {
-  margin-top: 18px;
+header h1{
+    font-family: "Playfair", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #b38813;
+}
+
+header h4{
+    margin: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: #fff solid;
+}
+
+header button{
+    margin: 40px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 20px;
+    font-family: "Playfair", sans-serif;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+
+.main .content .card .right img{
+    width: 400px;
+    height: auto;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: "Playfair", sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 35%;
+    padding-bottom: 5px;
+}
+
+footer .equipe{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .equipe .eleve{
+    margin-right: 30px;
+    padding: 10px;
+}
+
+footer .equipe .eleve p{
+    max-width: 300px;
+}
+
+footer #contact{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+@media screen and (max-width: 680px){
+
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card{
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
 }
